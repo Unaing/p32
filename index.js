@@ -19,6 +19,6 @@ async function fetchData(endpoint) {
         document.getElementById('output').innerText = JSON.stringify(data, null, 2);
     } catch (error) {
         console.error('Error fetching data:', error.message);
-        document.getElementById('output').innerText = 'Error fetching data';
+        document.getElementById('output').innerText = '${error.message}';
     }
 }
